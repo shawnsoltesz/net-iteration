@@ -53,8 +53,6 @@ namespace DotnetIteration
         {
             //throw new System.NotImplementedException();
 
-            var number = new List<int>() { 42, 100, 50, -12, 98 };
-
             var doubleNumbers = numbers.Select(number => number * 2);
 
             return doubleNumbers;
@@ -69,7 +67,11 @@ namespace DotnetIteration
         // 
         public static IEnumerable<string> StringyIndexes(List<string> words)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var newWords = words.Select((word, index) => $"{word} is at index {index}");
+
+            return newWords;
         }
 
 
@@ -79,7 +81,11 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> OnlyTheEvenSurvive(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var newNumbers = numbers.Where(number => (number % 2 == 0));
+
+            return newNumbers;
         }
 
 
