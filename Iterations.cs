@@ -119,9 +119,9 @@ namespace DotnetIteration
         {
             throw new System.NotImplementedException();
 
-            //var newBestMovieOfTheYear = movies.Where(movies, yearToMatch < 90);
+            //var newMovies = movies.Where(movies, yearToMatch < 90) => movies;
 
-            //return movies;
+            //return newMovies;
 
 
         }
@@ -150,6 +150,12 @@ namespace DotnetIteration
         {
             throw new System.NotImplementedException();
 
+            // Find the index of the first movie that has over 100 screenings. Will return -1 if there aren't any such movies.
+
+
+            //var needleString = sentences.FindIndex(sentence => sentence == "needle");
+
+            //return ;
 
         }
 
@@ -162,6 +168,10 @@ namespace DotnetIteration
         public static int FindTheNeedleIndex(List<string> sentences)
         {
             throw new System.NotImplementedException();
+
+            //var newSentences = sentences.FindIndex(sentence => sentence == "needle");
+
+            //return newSentences;
         }
 
 
@@ -172,7 +182,12 @@ namespace DotnetIteration
         // 
         public static bool SomeoneToLove(List<string> words)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            // Figure out if there is even a single old movie (before 1965) in our list
+            var fourWords = words.Any(word => word.Length == 4);
+
+            return fourWords;
         }
     }
 }
