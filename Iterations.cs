@@ -133,11 +133,11 @@ namespace DotnetIteration
         // 
         public static bool EveryoneIsOdd(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
 
-            //var newNumbers = numbers.Where(number => number % 2 != 0);
+            var newNumbers = numbers.All(number => number % 2 != 0);
 
-            // return newNumbers;
+            return newNumbers;
         }
 
 
@@ -149,6 +149,8 @@ namespace DotnetIteration
         public static string FindTheNeedle(List<string> sentences)
         {
             throw new System.NotImplementedException();
+
+
         }
 
 
