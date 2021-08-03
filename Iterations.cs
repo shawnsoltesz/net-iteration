@@ -96,7 +96,12 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> OnlyTheEvenIndexedSurvive(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var newNumbers = numbers.Where((number, index) => index % 2 == 0);
+
+            return newNumbers;
+
         }
 
 
@@ -116,6 +121,8 @@ namespace DotnetIteration
         public static IEnumerable<string> BestMovieOfTheYear(List<Movie> movies, int yearToMatch)
         {
             throw new System.NotImplementedException();
+
+            var newBestMovieOfTheYear = movies.Where(yearToMatch,)
         }
 
 
