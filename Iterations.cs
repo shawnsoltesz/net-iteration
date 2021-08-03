@@ -31,8 +31,16 @@ namespace DotnetIteration
         //    the words forced to uppercase.
         //
         public static IEnumerable<string> Yelling(List<string> words)
+
+        // The effects would be:
+        // upperName = "SUNCOAST DEVELOPERS GUILD";
+        // lowerName = "suncoast developers guild";
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var newWords = words.Select(word => word.ToUpper());
+
+            return newWords;
         }
 
 
@@ -43,7 +51,13 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> Double(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+
+            var number = new List<int>() { 42, 100, 50, -12, 98 };
+
+            var doubleNumbers = numbers.Select(number => number * 2);
+
+            return doubleNumbers;
         }
 
 
